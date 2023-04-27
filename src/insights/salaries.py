@@ -25,8 +25,8 @@ def get_min_salary(path: str) -> int:
 
     salaries = []
     for salary in list_data_file:
-        if salary["max_salary"] != "" and salary["max_salary"] != "invalid":
-            salaries.append(int(salary["max_salary"]))
+        if salary["min_salary"] != "" and salary["min_salary"] != "invalid":
+            salaries.append(int(salary["min_salary"]))
     return min(salaries)
 
 
